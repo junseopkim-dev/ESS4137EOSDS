@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Dimap_Document name="subset_0_of_S1A_IW_GRDH_1SDV_20230430T093224_20230430T093249_048324_05CFD5_CC86_tnr_Orb_Cal_TC_resampled_Spk_msk_kmeans.dim">
+    <Metadata_Id>
+        <METADATA_FORMAT version="2.13.0">DIMAP</METADATA_FORMAT>
+        <METADATA_PROFILE>BEAM-DATAMODEL-V1</METADATA_PROFILE>
+    </Metadata_Id>
+    <Dataset_Id>
+        <DATASET_SERIES>BEAM-PRODUCT</DATASET_SERIES>
+        <DATASET_NAME>subset_0_of_S1A_IW_GRDH_1SDV_20230430T093224_20230430T093249_048324_05CFD5_CC86_tnr_Orb_Cal_TC_resampled_Spk_msk_kmeans</DATASET_NAME>
+    </Dataset_Id>
+    <Production>
+        <DATASET_PRODUCER_NAME />
+        <PRODUCT_TYPE>GRD_CLUSTERS</PRODUCT_TYPE>
+        <PRODUCT_SCENE_RASTER_START_TIME>30-APR-2023 09:32:42.094397</PRODUCT_SCENE_RASTER_START_TIME>
+        <PRODUCT_SCENE_RASTER_STOP_TIME>30-APR-2023 09:32:45.654223</PRODUCT_SCENE_RASTER_STOP_TIME>
+    </Production>
+    <Coordinate_Reference_System>
+        <WKT>
+             GEOGCS["WGS84(DD)", 
+               DATUM["WGS84", 
+                 SPHEROID["WGS84", 6378137.0, 298.257223563]], 
+               PRIMEM["Greenwich", 0.0], 
+               UNIT["degree", 0.017453292519943295], 
+               AXIS["Geodetic longitude", EAST], 
+               AXIS["Geodetic latitude", NORTH]]
+        </WKT>
+    </Coordinate_Reference_System>
+    <Geoposition>
+        <IMAGE_TO_MODEL_TRANSFORM>8.983152841195215E-4,0.0,0.0,-8.983152841195215E-4,126.29104029808144,37.598289536139276</IMAGE_TO_MODEL_TRANSFORM>
+    </Geoposition>
+    <Index_Coding name="Cluster_classes">
+        <Index>
+            <INDEX_NAME>class_1</INDEX_NAME>
+            <INDEX_VALUE>0</INDEX_VALUE>
+            <INDEX_DESCRIPTION>Cluster 0, Center(Gamma0_VV_db=-17.737)</INDEX_DESCRIPTION>
+        </Index>
+        <Index>
+            <INDEX_NAME>class_2</INDEX_NAME>
+            <INDEX_VALUE>1</INDEX_VALUE>
+            <INDEX_DESCRIPTION>Cluster 1, Center(Gamma0_VV_db=-9.604)</INDEX_DESCRIPTION>
+        </Index>
+    </Index_Coding>
+    <Raster_Dimensions>
+        <NCOLS>400</NCOLS>
+        <NROWS>300</NROWS>
+        <NBANDS>1</NBANDS>
+    </Raster_Dimensions>
+    <Data_Access>
+        <DATA_FILE_FORMAT>ENVI</DATA_FILE_FORMAT>
+        <DATA_FILE_FORMAT_DESC>ENVI File Format</DATA_FILE_FORMAT_DESC>
+        <DATA_FILE_ORGANISATION>BAND_SEPARATE</DATA_FILE_ORGANISATION>
+        <Data_File>
+            <DATA_FILE_PATH href="subset_0_of_S1A_IW_GRDH_1SDV_20230430T093224_20230430T093249_048324_05CFD5_CC86_tnr_Orb_Cal_TC_resampled_Spk_msk_kmeans.data/class_indices.hdr" />
+            <BAND_INDEX>0</BAND_INDEX>
+        </Data_File>
+    </Data_Access>
+    <Image_Interpretation>
+        <Spectral_Band_Info>
+            <BAND_INDEX>0</BAND_INDEX>
+            <BAND_DESCRIPTION>Class_indices</BAND_DESCRIPTION>
+            <BAND_NAME>class_indices</BAND_NAME>
+            <BAND_RASTER_WIDTH>400</BAND_RASTER_WIDTH>
+            <BAND_RASTER_HEIGHT>300</BAND_RASTER_HEIGHT>
+            <DATA_TYPE>uint8</DATA_TYPE>
+            <SOLAR_FLUX>0.0</SOLAR_FLUX>
+            <BAND_WAVELEN>0.0</BAND_WAVELEN>
+            <BANDWIDTH>0.0</BANDWIDTH>
+            <INDEX_CODING_NAME>Cluster_classes</INDEX_CODING_NAME>
+            <SCALING_FACTOR>1.0</SCALING_FACTOR>
+            <SCALING_OFFSET>0.0</SCALING_OFFSET>
+            <LOG10_SCALED>false</LOG10_SCALED>
+            <NO_DATA_VALUE_USED>true</NO_DATA_VALUE_USED>
+            <NO_DATA_VALUE>255.0</NO_DATA_VALUE>
+            <IMAGE_TO_MODEL_TRANSFORM>8.983152841195215E-4,0.0,0.0,-8.983152841195215E-4,126.29104029808144,37.598289536139276</IMAGE_TO_MODEL_TRANSFORM>
+        </Spectral_Band_Info>
+    </Image_Interpretation>
+    <Dataset_Sources>
+        <MDElem name="metadata">
+            <MDElem name="Cluster_Analysis">
+                <MDElem name="class.0">
+                    <MDATTR name="cluster_center.Gamma0_VV_db" type="float64">-17.736560974746908</MDATTR>
+                </MDElem>
+                <MDElem name="class.1">
+                    <MDATTR name="cluster_center.Gamma0_VV_db" type="float64">-9.60370635002713</MDATTR>
+                </MDElem>
+            </MDElem>
+            <MDElem name="Processing_Graph">
+                <MDElem name="node.0">
+                    <MDATTR name="id" type="ascii" mode="rw">KMeansClusterAnalysis$18C44A55D57</MDATTR>
+                    <MDATTR name="operator" type="ascii" mode="rw">KMeansClusterAnalysis</MDATTR>
+                    <MDATTR name="moduleName" type="ascii" mode="rw">SNAP Cluster Analysis</MDATTR>
+                    <MDATTR name="moduleVersion" type="ascii" mode="rw">9.0.8</MDATTR>
+                    <MDATTR name="purpose" type="ascii" mode="rw">Performs a K-Means cluster analysis.</MDATTR>
+                    <MDATTR name="authors" type="ascii" mode="rw">Ralf Quast, Marco Zuehlke</MDATTR>
+                    <MDATTR name="version" type="ascii" mode="rw">1.0</MDATTR>
+                    <MDATTR name="copyright" type="ascii" mode="rw">(c) 2008 by Brockmann Consult</MDATTR>
+                    <MDATTR name="processingTime" type="ascii" mode="rw">2023-12-07T14:18:57.245Z</MDATTR>
+                    <MDElem name="sources">
+                        <MDATTR name="source" type="ascii" mode="rw">file:/C:/Users/kjs/Documents/3-2/EOSDS/TermProj/final/Lab9_5/subset_0_of_S1A_IW_GRDH_1SDV_20230430T093224_20230430T093249_048324_05CFD5_CC86_tnr_Orb_Cal_TC_resampled_Spk_msk.dim</MDATTR>
+                    </MDElem>
+                    <MDElem name="parameters">
+                        <MDATTR name="randomSeed" type="ascii">31415</MDATTR>
+                        <MDATTR name="iterationCount" type="ascii">30</MDATTR>
+                        <MDATTR name="clusterCount" type="ascii">2</MDATTR>
+                        <MDATTR name="sourceBandNames" type="ascii">Gamma0_VV_db</MDATTR>
+                    </MDElem>
+                </MDElem>
+                <MDElem name="node.1">
+                    <MDATTR name="id" type="ascii" mode="rw">Write$18C44A55D6C</MDATTR>
+                    <MDATTR name="operator" type="ascii" mode="rw">Write</MDATTR>
+                    <MDATTR name="moduleName" type="ascii" mode="rw">SNAP Graph Processing Framework (GPF)</MDATTR>
+                    <MDATTR name="moduleVersion" type="ascii" mode="rw">9.0.8</MDATTR>
+                    <MDATTR name="purpose" type="ascii" mode="rw">Writes a data product to a file.</MDATTR>
+                    <MDATTR name="authors" type="ascii" mode="rw">Marco Zuehlke, Norman Fomferra</MDATTR>
+                    <MDATTR name="version" type="ascii" mode="rw">1.3</MDATTR>
+                    <MDATTR name="copyright" type="ascii" mode="rw">(c) 2010 by Brockmann Consult</MDATTR>
+                    <MDATTR name="processingTime" type="ascii" mode="rw">2023-12-07T14:18:57.264Z</MDATTR>
+                    <MDElem name="sources">
+                        <MDATTR name="sourceProduct" type="ascii" mode="rw">file:/C:/Users/kjs/Documents/3-2/EOSDS/TermProj/final/Lab9_5/subset_0_of_S1A_IW_GRDH_1SDV_20230430T093224_20230430T093249_048324_05CFD5_CC86_tnr_Orb_Cal_TC_resampled_Spk_msk_kmeans.dim</MDATTR>
+                    </MDElem>
+                    <MDElem name="parameters">
+                        <MDATTR name="writeEntireTileRows" type="ascii">true</MDATTR>
+                        <MDATTR name="file" type="ascii">C:\Users\kjs\Documents\3-2\EOSDS\TermProj\final\Lab9_5\subset_0_of_S1A_IW_GRDH_1SDV_20230430T093224_20230430T093249_048324_05CFD5_CC86_tnr_Orb_Cal_TC_resampled_Spk_msk_kmeans.dim</MDATTR>
+                        <MDATTR name="deleteOutputOnFailure" type="ascii">true</MDATTR>
+                        <MDATTR name="formatName" type="ascii">BEAM-DIMAP</MDATTR>
+                        <MDATTR name="clearCacheAfterRowWrite" type="ascii">false</MDATTR>
+                    </MDElem>
+                </MDElem>
+            </MDElem>
+        </MDElem>
+    </Dataset_Sources>
+</Dimap_Document>
