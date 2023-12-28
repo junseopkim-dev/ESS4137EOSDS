@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Placemarks>
+    <Placemark name="gcp_9">
+        <LABEL>GCP 9</LABEL>
+        <DESCRIPTION />
+        <LATITUDE>34.8403222</LATITUDE>
+        <LONGITUDE>128.6113453</LONGITUDE>
+        <PIXEL_X>15882.5</PIXEL_X>
+        <PIXEL_Y>9239.5</PIXEL_Y>
+        <STYLE_CSS>symbol:plus; stroke:#ff8800; stroke-opacity:0.8; stroke-width:1.0</STYLE_CSS>
+    </Placemark>
+</Placemarks>
